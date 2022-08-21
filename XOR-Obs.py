@@ -23,7 +23,7 @@ def xorEnc(contents, key):
 
 if __name__ == '__main__':
 
-    contents = "Thank for checking out this script!"
+    contents = "Thanks for checking out this script!"
 
 
     key = "".join(random.choices(list(string.ascii_letters + string.digits), k = len(contents))) 
