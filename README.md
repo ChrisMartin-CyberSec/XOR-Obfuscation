@@ -5,8 +5,8 @@
 
 
 
-A short representation of a very popular method of obfuscation
+A short representation of a very popular method of obfuscation utilizing two different functions
 
 
 
-## Ensure You Always Save the **Key** So You Can **Decrypt** Your Files!
+### Ensure You Always Save the **Key** So You Can **Decrypt** Your Files!
