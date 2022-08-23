@@ -1,3 +1,12 @@
+##############################################################
+# Script Name:          xorEncV2.py                          #
+# Author:               Levi von Haxor                       #
+# Description:          Two different XOR encryption methods #
+#                       With two different key lengths       #
+##############################################################
+
+
+
 import random 
 import string
 
