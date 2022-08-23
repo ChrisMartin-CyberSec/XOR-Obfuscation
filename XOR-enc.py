@@ -1,5 +1,5 @@
 ##############################################################
-# Script Name:          xorEncV2.py                          #
+# Script Name:          XOR-enc.py                           #
 # Author:               Levi von Haxor                       #
 # Description:          Two different XOR encryption methods #
 #                       With two different key lengths       #
