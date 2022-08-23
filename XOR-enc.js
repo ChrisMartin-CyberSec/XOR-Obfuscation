@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////
-// Script Name:     XOR-enc.js                              //            
+// Script Name:     xorEnc.js                               //            
 // Author:          Levi von Haxor                          //
 // Description:     Symmetric XOR encrytion utilizing two   //
 //                  different XOR functions                 //
@@ -7,11 +7,7 @@
 
 const charList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // The character pool to choose our key from
 
-const charLength = charList.length  
-
-let contents = 'Thanks for checking out this script!'; 
-
-const contentsLength = contents.length;
+const contents = 'Thanks for checking out this script!'; 
 
 
 // The first key method involves a key length == contents length
@@ -19,9 +15,9 @@ function xorKey1()
 {
     let key = '';
 
-    for (i = 0; i < contentsLength; i++)
+    for (i = 0; i < contents.length; i++)
     {
-        key += charList[Math.floor(Math.random() * charLength)] // We use the floor method since indexing begins at 0 and ends at contentsLength - 1
+        key += charList[Math.floor(Math.random() * charList.length)] // We use the floor method since indexing begins at 0 and ends at contentsLength - 1
     };
 
     return key;
@@ -34,7 +30,7 @@ function xorEnc1(contents, key)
 {
     let xorContents = '';
     
-    for (let i =0; i < contentsLength; i++)
+    for (let i =0; i < contents.length; i++)
     {
         xorContents += String.fromCharCode(contents.charCodeAt(i) ^ key.charCodeAt((i)))     
     };
@@ -47,7 +43,7 @@ function xorEnc1(contents, key)
 // The second key method involves a key of length 1
 function xorKey2()
 {
-    let key = charList[Math.floor(Math.random() * charLength)] // Same floor method here but no for loop
+    let key = charList[Math.floor(Math.random() * charList.length)] // Same floor method here but no for loop
 
     return key;
 };
@@ -59,7 +55,7 @@ function xorEnc2(contents, key)
 {
     let xorContents = '';
 
-    for (let i = 0; i < contentsLength; i++)
+    for (let i = 0; i < contents.length; i++)
     {
         xorContents += String.fromCharCode(contents.charCodeAt(i) ^ key.charCodeAt(0)) 
     };
