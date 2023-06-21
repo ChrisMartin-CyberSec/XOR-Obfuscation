@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////
 // Script Name:     xorEnc.js                               //            
-// Author:          Levi von Haxor                          //
+// Author:          Christian Martin                        //
 // Description:     Symmetric XOR encrytion utilizing two   //
 //                  different XOR functions                 //
 //////////////////////////////////////////////////////////////
